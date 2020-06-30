@@ -1,0 +1,5 @@
+/* сдвиг изображения маркера для установки острым концом на точку клика */
+.leaflet-marker-icon, .leaflet-marker-shadow {
+	top : -39px;
+	left : -12px;
+}
