@@ -6,22 +6,13 @@ import 'react-leaflet-fullscreen/dist/styles.css'
 import FullscreenControl from 'react-leaflet-fullscreen';
 // import './maps.css'
 
+// fix marker default icon
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0/images/marker-icon.png',
   iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0/images/marker-icon.png',
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0/images/marker-shadow.png',
 });
-
-/*
-// fix marker default icon
-import icon from 'leaflet/dist/images/marker-icon.png';
-import iconShadow from 'leaflet/dist/images/marker-shadow.png';
-
-// fix marker default icon
-let DefaultIcon = L.icon({ iconUrl: icon, shadowUrl: iconShadow });
-L.Marker.prototype.options.icon = DefaultIcon;
-*/
 
 function MapViewer (props) {
   
