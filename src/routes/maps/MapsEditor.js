@@ -27,47 +27,12 @@ function MapsEditor() {
         setNoticeShow(false);
     }
 
-    const [ center, setCenter ] = useState( [ 53.4, 58.9 ] );
+    const [ center, setCenter ] = useState( [ 55.76, 37.57 ] );
     const [ zoom, setZoom ] = useState( 10 );
 
     const geoJSON = new L.GeoJSON({
         "type": "FeatureCollection",
-        "features": [
-            {
-                "type": "Feature",
-                "properties": {},
-                "geometry": {
-                    "type": "LineString",
-                    "coordinates": [
-                        [ 58.95, 53.45 ],
-                        [ 58.99, 53.45 ],
-                        [ 58.99, 53.49 ],
-                    ],
-                }
-            },
-            {
-                "type": "Feature",
-                "properties": {},
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": [ 58.7, 53.3 ],
-                }
-            },
-            {
-                "type": "Feature",
-                "properties": {},
-                "geometry": {
-                    "type": "Polygon",
-                    "coordinates": [
-                        [
-                            [ 58.15, 53.25 ],
-                            [ 58.75, 54.0 ],
-                            [ 58.05, 53.50 ],
-                        ]
-                    ]
-                }
-            },
-        ]
+        "features": []
     });
     
     const [ mapObjects, setMapObjects ] = useState(geoJSON);

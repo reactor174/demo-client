@@ -25,7 +25,7 @@ function Footer() {
               alt="React Bootstrap logo"
             />
             <br />
-            <Button href="https://github.com" variant="outline-secondary">Github</Button>
+            <Button href="https://github.com/reactor174" target="_blank" variant="outline-secondary">Github</Button>
           </Col>
         </Row>
       </Container>
